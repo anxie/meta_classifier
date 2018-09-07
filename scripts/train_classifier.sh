@@ -1,0 +1,1 @@
+python main.py --data_dir=data/ --metatrain_iterations=50000 --vgg_path=vgg16_weights_tf_dim_ordering_tf_kernels_notop.h5 --train=True

@@ -1,3 +1,3 @@
-This contains code for training a few-shot success classifier. 
+# Few-Shot Goal Inference for Visuomotor Learning and Planning
 
-To run the code, you must provide a dataset, organized by folders named 'task_0', 'task_1', and so on, and in each task folder, the positive examples following the naming convention: 'success_0.jpg', 'success_1.jpg', etc. and negative examples following 'fail_0.jpg', 'fail_1.jpg', etc. 
+This repository contains code and data for training a few-shot success classifier as well as a pretrained model for the Sawyer experiment from `Few-Shot Goal Inference for Visuomotor Learning and Planning`. First, download the data by running `scripts/get_sawyer_data.sh`. Run `scripts/train_classifier.sh` to train a classifier from scratch, or run `scripts/test_classifier.sh` to test the provided pretrained model. 

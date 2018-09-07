@@ -1,0 +1,1 @@
+python main.py --data_dir=data/ --vgg_path=vgg16_weights_tf_dim_ordering_tf_kernels_notop.h5 --model_file=pretrained_model/model49999 --train=False
