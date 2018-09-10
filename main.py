@@ -11,7 +11,7 @@ from tensorflow.python.platform import flags
 FLAGS = flags.FLAGS
 
 ## Dataset/method options
-flags.DEFINE_string('data_dir', '/home/annie/Desktop/meta_classifier/data', 'directory of data')
+flags.DEFINE_string('data_dir', '', 'directory of data')
 flags.DEFINE_integer('num_tasks', 92, 'number of tasks in dataset')
 flags.DEFINE_float('train_val_split', 0.1, 'train/validation set split')
 flags.DEFINE_integer('im_height', 56, 'height of images')
@@ -39,13 +39,13 @@ flags.DEFINE_integer('num_filters', 32, 'number of filters for conv nets.')
 flags.DEFINE_integer('num_fc_layers', 2, 'number of fully connected layers')
 flags.DEFINE_integer('hidden_dim', 40, 'hidden dimension of fully connected layers')
 flags.DEFINE_bool('fp', True, 'use feature spatial soft-argmax')
-flags.DEFINE_string('vgg_path', '/home/annie/Desktop/meta_classifier/vgg16_weights_tf_dim_ordering_tf_kernels_notop.h5', 'path to weights for first layer of VGG')
+flags.DEFINE_string('vgg_path', '', 'path to weights for first layer of VGG')
 
 ## Logging, saving, and testing options
 flags.DEFINE_bool('log', True, 'if false, do not log summaries, for debugging code.')
 flags.DEFINE_string('logdir', '/tmp/data', 'directory for summaries and checkpoints.')
 flags.DEFINE_bool('resume', True, 'resume training if there is a model available')
-flags.DEFINE_string('model_file', '/home/annie/Desktop/meta_classifier/pretrained_model/model49999', 'path to the pretrained model')
+flags.DEFINE_string('model_file', '', 'path to the pretrained model')
 
 flags.DEFINE_bool('train', False, 'True to train, False to test.')
 flags.DEFINE_integer('test_iter', -1, 'iteration to load model (-1 for latest model)')
